@@ -11,34 +11,77 @@ struct ContentView: View {
     
     @StateObject var expenses = Expenses()
     @State private var showingAddExpense = false
-    
-    
+ 
+
     var body: some View {
+        
         NavigationView{
             List{
-                
-                ForEach(expenses.items){ item in
+        
+
+                Section{
+                    ForEach(expenses.items.filter{ $0.type == "Personal"} ){ item in
+                        HStack{
+                            VStack(alignment: .leading){
+                                Text(item.name)
+                                    .font(.headline)
+                                Text(item.type)
+                            }
+                            Spacer()
+                            if item.amount <= 10 {
+                                Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))               .foregroundColor(.yellow)
+                            
+                            } else if item.amount > 10 && item.amount < 100 {
+                                Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))               .foregroundColor(.orange)
+                                    .bold()
+                            } else {
+                                Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))               .foregroundColor(.red)
+                                    .bold()
+                            }
+                            
+                        }
+                            
+                      }
+                    .onDelete(perform: removeItems)
+                } header: {
                     HStack{
-                        VStack(alignment: .leading){
-                            Text(item.name)
-                                .font(.headline)
-                            Text(item.type)
-                        }
-                        Spacer()
-                        if item.amount <= 10 {
-                            Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))               .foregroundColor(.yellow)
-                        
-                        } else if item.amount > 10 && item.amount < 100 {
-                            Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))               .foregroundColor(.orange)
-                                .bold()
-                        } else {
-                            Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))               .foregroundColor(.red)
-                                .bold()
-                        }
+                        Image(systemName: "person")
+                        Text("Personal")
                     }
-                        
-                  }
-                .onDelete(perform: removeItems)
+                }
+                
+                Section{
+                    ForEach(expenses.items.filter{ $0.type == "Business"} ){ item in
+                        HStack{
+                            VStack(alignment: .leading){
+                                Text(item.name)
+                                    .font(.headline)
+                                Text(item.type)
+                            }
+                            Spacer()
+                            if item.amount <= 10 {
+                                Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))               .foregroundColor(.yellow)
+                            
+                            } else if item.amount > 10 && item.amount < 100 {
+                                Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))               .foregroundColor(.orange)
+                                    .bold()
+                            } else {
+                                Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))               .foregroundColor(.red)
+                                    .bold()
+                            }
+                            
+                        }
+                            
+                      }
+                    .onDelete(perform: removeItems)
+                } header: {
+                    HStack{
+                        Image(systemName: "briefcase")
+                        Text("Business")
+                    }
+                }
+
+                
                 }
             .navigationTitle("iExpense")
             .toolbar{
@@ -50,7 +93,8 @@ struct ContentView: View {
             }
             .sheet(isPresented: $showingAddExpense){
                 AddView(expenses: expenses)
-            }
+                }
+            
             }
         }
     
