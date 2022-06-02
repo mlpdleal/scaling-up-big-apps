@@ -12,9 +12,11 @@ struct ContentView: View {
     @StateObject var expenses = Expenses()
     @State private var showingAddExpense = false
     
+    
     var body: some View {
         NavigationView{
             List{
+                
                 ForEach(expenses.items){ item in
                     HStack{
                         VStack(alignment: .leading){
@@ -23,7 +25,16 @@ struct ContentView: View {
                             Text(item.type)
                         }
                         Spacer()
-                        Text(item.amount, format: .currency(code: "USD"))
+                        if item.amount <= 10 {
+                            Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))               .foregroundColor(.yellow)
+                        
+                        } else if item.amount > 10 && item.amount < 100 {
+                            Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))               .foregroundColor(.orange)
+                                .bold()
+                        } else {
+                            Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))               .foregroundColor(.red)
+                                .bold()
+                        }
                     }
                         
                   }
