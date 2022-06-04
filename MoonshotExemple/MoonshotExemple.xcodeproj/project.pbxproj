@@ -13,6 +13,7 @@
 		EAFFA3C5284A7F7500C9D0EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFFA3C4284A7F7500C9D0EF /* Preview Assets.xcassets */; };
 		EAFFA3CC284AD02500C9D0EF /* ExempleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFA3CB284AD02500C9D0EF /* ExempleScrollView.swift */; };
 		EAFFA3CE284AECBC00C9D0EF /* NavigationLinkExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFA3CD284AECBC00C9D0EF /* NavigationLinkExample.swift */; };
+		EAFFA3D0284B966200C9D0EF /* ScrollingGridExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFA3CF284B966200C9D0EF /* ScrollingGridExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		EAFFA3C4284A7F7500C9D0EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EAFFA3CB284AD02500C9D0EF /* ExempleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExempleScrollView.swift; sourceTree = "<group>"; };
 		EAFFA3CD284AECBC00C9D0EF /* NavigationLinkExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkExample.swift; sourceTree = "<group>"; };
+		EAFFA3CF284B966200C9D0EF /* ScrollingGridExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingGridExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				EAFFA3CD284AECBC00C9D0EF /* NavigationLinkExample.swift */,
 				EAFFA3C1284A7F7500C9D0EF /* Assets.xcassets */,
 				EAFFA3C3284A7F7500C9D0EF /* Preview Content */,
+				EAFFA3CF284B966200C9D0EF /* ScrollingGridExample.swift */,
 			);
 			path = MoonshotExemple;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				EAFFA3C0284A7F7400C9D0EF /* ContentView.swift in Sources */,
 				EAFFA3CC284AD02500C9D0EF /* ExempleScrollView.swift in Sources */,
 				EAFFA3BE284A7F7400C9D0EF /* MoonshotExempleApp.swift in Sources */,
+				EAFFA3D0284B966200C9D0EF /* ScrollingGridExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
