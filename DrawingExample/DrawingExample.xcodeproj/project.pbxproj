@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EAE867CD28515E3100FEABFA /* TransformingShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE867CC28515E3100FEABFA /* TransformingShapes.swift */; };
+		EAE867CF28516AA900FEABFA /* CreativeBordersImagePaint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE867CE28516AA900FEABFA /* CreativeBordersImagePaint.swift */; };
+		EAE867D12851712800FEABFA /* EnablingHighPerformanceMetal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE867D02851712800FEABFA /* EnablingHighPerformanceMetal.swift */; };
 		EAEE0397284FAAD2001943E6 /* DrawingExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE0396284FAAD2001943E6 /* DrawingExampleApp.swift */; };
 		EAEE0399284FAAD2001943E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE0398284FAAD2001943E6 /* ContentView.swift */; };
 		EAEE039B284FAAD2001943E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEE039A284FAAD2001943E6 /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EAE867CC28515E3100FEABFA /* TransformingShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformingShapes.swift; sourceTree = "<group>"; };
+		EAE867CE28516AA900FEABFA /* CreativeBordersImagePaint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativeBordersImagePaint.swift; sourceTree = "<group>"; };
+		EAE867D02851712800FEABFA /* EnablingHighPerformanceMetal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnablingHighPerformanceMetal.swift; sourceTree = "<group>"; };
 		EAEE0393284FAAD1001943E6 /* DrawingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEE0396284FAAD2001943E6 /* DrawingExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingExampleApp.swift; sourceTree = "<group>"; };
 		EAEE0398284FAAD2001943E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,8 +65,11 @@
 				EAEE0398284FAAD2001943E6 /* ContentView.swift */,
 				EAEE03A428502625001943E6 /* PathVsShapeView.swift */,
 				EAEE03A628503D0F001943E6 /* DrawingCircle.swift */,
+				EAE867CC28515E3100FEABFA /* TransformingShapes.swift */,
+				EAE867CE28516AA900FEABFA /* CreativeBordersImagePaint.swift */,
 				EAEE039A284FAAD2001943E6 /* Assets.xcassets */,
 				EAEE039C284FAAD2001943E6 /* Preview Content */,
+				EAE867D02851712800FEABFA /* EnablingHighPerformanceMetal.swift */,
 			);
 			path = DrawingExample;
 			sourceTree = "<group>";
@@ -144,9 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAEE03A728503D0F001943E6 /* DrawingCircle.swift in Sources */,
+				EAE867D12851712800FEABFA /* EnablingHighPerformanceMetal.swift in Sources */,
 				EAEE03A528502625001943E6 /* PathVsShapeView.swift in Sources */,
+				EAE867CD28515E3100FEABFA /* TransformingShapes.swift in Sources */,
 				EAEE0399284FAAD2001943E6 /* ContentView.swift in Sources */,
 				EAEE0397284FAAD2001943E6 /* DrawingExampleApp.swift in Sources */,
+				EAE867CF28516AA900FEABFA /* CreativeBordersImagePaint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
