@@ -18,6 +18,7 @@ struct GridLayout: View{
     ]
     
     var body: some View{
+
         ScrollView{
             LazyVGrid(columns: columns){
                 ForEach(missions) { mission in
