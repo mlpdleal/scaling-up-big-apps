@@ -11,6 +11,8 @@
 		EA613E612853F97100AA9BA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA613E602853F97100AA9BA3 /* ContentView.swift */; };
 		EA613E632853F97200AA9BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA613E622853F97200AA9BA3 /* Assets.xcassets */; };
 		EA613E662853F97200AA9BA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA613E652853F97200AA9BA3 /* Preview Assets.xcassets */; };
+		EA613E6D285407C600AA9BA3 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA613E6C285407C600AA9BA3 /* ArrowView.swift */; };
+		EA613E6F28540EA400AA9BA3 /* ColoredRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA613E6E28540EA400AA9BA3 /* ColoredRectangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		EA613E602853F97100AA9BA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA613E622853F97200AA9BA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA613E652853F97200AA9BA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA613E6C285407C600AA9BA3 /* ArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
+		EA613E6E28540EA400AA9BA3 /* ColoredRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredRectangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				EA613E5E2853F97100AA9BA3 /* ChallengeApp.swift */,
 				EA613E602853F97100AA9BA3 /* ContentView.swift */,
+				EA613E6C285407C600AA9BA3 /* ArrowView.swift */,
+				EA613E6E28540EA400AA9BA3 /* ColoredRectangle.swift */,
 				EA613E622853F97200AA9BA3 /* Assets.xcassets */,
 				EA613E642853F97200AA9BA3 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				EA613E612853F97100AA9BA3 /* ContentView.swift in Sources */,
 				EA613E5F2853F97100AA9BA3 /* ChallengeApp.swift in Sources */,
+				EA613E6F28540EA400AA9BA3 /* ColoredRectangle.swift in Sources */,
+				EA613E6D285407C600AA9BA3 /* ArrowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
