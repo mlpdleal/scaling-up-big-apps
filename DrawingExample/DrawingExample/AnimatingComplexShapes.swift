@@ -59,6 +59,8 @@ struct AnimatingComplexShapes: View {
                 withAnimation(.linear(duration: 3)){
                     rows = 8
                     columns = 16
+                    
+
                 }
             }
     }
