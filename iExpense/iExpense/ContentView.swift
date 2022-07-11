@@ -18,7 +18,6 @@ struct ContentView: View {
         NavigationView{
             List{
         
-
                 Section{
                     ForEach(expenses.items.filter{ $0.type == "Personal"} ){ item in
                         HStack{
@@ -27,6 +26,10 @@ struct ContentView: View {
                                     .font(.headline)
                                 Text(item.type)
                             }
+                            .accessibilityElement(children: .ignore)
+                            .accessibilityLabel(item.name)
+                            .accessibilityHint(item.type)
+                            
                             Spacer()
                             if item.amount <= 10 {
                                 Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))               .foregroundColor(.yellow)
